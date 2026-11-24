@@ -1,0 +1,116 @@
+FormulaSnap - snip handwritten or printed notes into Word
+=========================================================
+
+What it does
+------------
+Snip any part of the screen (notes, formulas, diagrams). FormulaSnap reads it and
+puts it into Microsoft Word as:
+  - clean typed text (your document's font, headings in bold)
+  - real Word equations (fractions, powers, roots... editable)
+  - diagrams redrawn as editable Word drawings
+  - circuits drawn with exact textbook symbols (resistors, capacitors, inductors,
+    diodes, BJTs, MOSFETs, op-amps, logic gates, transformers, sources, meters,
+    ground/Vcc). Each part is one object: click it to move, copy or delete it.
+
+Diagram settings (bottom of the window)
+---------------------------------------
+  Diagrams: Editable drawing      - redrawn, you can edit every line and label
+            Exact picture (cleaned) - the original diagram, shadows removed,
+                                      white paper, sharp ink (looks 100% the same)
+            Both                  - the clean picture AND the editable drawing
+  Double-check diagrams - after reading, Claude compares the redrawing with the
+            original and fixes anything wrong (wrong part, wire, label, value).
+            More accurate; takes a little longer and costs a little more.
+
+AI model (bottom of the window)
+-------------------------------
+  Economy - Haiku (cheapest)   about Rs 1-2 per circuit or page. Good for most work.
+  Balanced - Sonnet            middle price.
+  Best - Opus (most accurate)  costs much more; use for big, messy circuits
+                               or when Economy gets something wrong.
+  "Spent: $..." on the right shows what this session has cost so far.
+
+This PC needs
+-------------
+  - Windows 10 or 11 (64-bit)   (Windows 7 / 8 are not supported)
+  - Microsoft Word 2010, 2013, 2016, 2019, 2021 or Microsoft 365 (desktop app,
+    32-bit or 64-bit). Word 2007 also works for most things.
+  - Your document must be a .docx file. Old .doc files (Word 97-2003 format)
+    cannot hold equations - in Word use File > Save As > "Word Document (*.docx)".
+  - Internet connection
+  - A Claude API key (from console.anthropic.com). Each snip costs a small amount
+    from that account. The key is saved only on this PC.
+
+Nothing else needs to be installed. Python is NOT needed.
+
+First time
+----------
+1. Copy FormulaSnap.exe to a folder that will stay (for example Documents).
+   Don't run it straight from Downloads or from a pen drive.
+2. Double-click FormulaSnap.exe.
+   If Windows shows "Windows protected your PC", click "More info", then "Run anyway".
+   (This appears because the app is new and not signed by a company.)
+3. Paste your Claude API key when asked.
+4. Tick "Start with Windows" at the bottom of the window if you want it to open
+   every time the PC starts.
+
+Every day
+---------
+1. Open your Word document normally and click where the result should go.
+2. Press  Win + Shift + S  and select the notes / formula / diagram.
+3. FormulaSnap pops up and reads it (a full page with diagrams takes 1-3 minutes).
+4. Check the result box (you can correct mistakes there), then press
+   "Insert into Word"   - or -   "Copy for Word" and press Ctrl+V in Word.
+
+Convert a whole file (PDF or photos of pages)
+---------------------------------------------
+1. Press "Convert file" at the top of the window.
+2. Choose a PDF, or one or more photos/scans of your pages (several photos are
+   taken in name order: page1.jpg, page2.jpg ...).
+3. A chat window opens. If you want something special, type it first
+   (e.g. "skip pages 1-2", "Times New Roman 12", "double spacing"), then press
+   "Start converting".
+4. It reads every page, WORD FOR WORD (never a summary), and makes a Word file
+   that LOOKS LIKE YOUR ORIGINAL:
+     - every word, heading, bullet and table, in the same order
+     - bold / underlined / centred text kept, two-column parts kept
+     - the same font, one Word page per original page
+     - equations as real, editable Word equations
+     - diagrams redrawn as editable Word drawings
+   For PDFs with text inside, it checks the word count against the PDF and
+   reads a page again if anything is missing ("PDF text check: 208/208 words").
+5. The new file is saved next to your original as  "<name> - typed.docx"
+   and opens in Word by itself. Your original file is never changed.
+   Time: about 15-60 seconds per page. Press "Stop" to cancel.
+   A page that can't be read is added as a picture, so nothing is lost.
+
+Chat (tell it what to change)
+-----------------------------
+The chat window shows, step by step, what FormulaSnap is doing. After the file
+is made, type what you want and press Send (or Enter), for example:
+   - "page 3 is missing the last paragraph, add it"
+   - "fix the formula under Bernoulli's theorem"
+   - "make the headings bigger" / "Times New Roman 12, justified"
+   - "add a short explanation after each formula"
+   - "make it designed" (title page, contents, coloured headings, page numbers)
+   - "what is on page 4?"
+Each change is saved as a new version (… - typed (2).docx); older versions are
+kept. The main window's "Activity" box shows the same progress.
+
+Other buttons
+-------------
+  Insert snip as picture  - puts the screenshot itself into Word.
+  Copy LaTeX              - copies the LaTeX text.
+  API key                 - change the key.
+
+If something goes wrong
+-----------------------
+  - "Word is running as administrator": close Word and open it normally (not with
+    right-click > Run as administrator). Until then, the app copies the result
+    for you - just press Ctrl+V in Word.
+  - "old Word 97-2003 (.doc) format": save the document as .docx first
+    (File > Save As > Word Document), then press Insert again.
+  - Word 2010: if the title bar says "[Compatibility Mode]", use
+    File > Info > Convert, so equations stay editable.
+  - "API key is wrong": click "API key" at the bottom and paste a valid key.
+  - Error details are saved in:  %APPDATA%\FormulaSnap\log.txt
