@@ -10,6 +10,16 @@ Turn handwritten notes, formulas, circuit diagrams and whole PDFs into **editabl
 - **Review before it goes in:** original beside what was read, unsure readings highlighted, nothing added until you approve
 - **Past-papers library:** search old questions, reuse them (circuits included), and get warned when a question was asked before
 
+## Screenshots
+
+<img src="screenshots/main.png" width="300"> <img src="screenshots/exam-paper.png" width="420">
+
+<img src="screenshots/review.png" width="740">
+
+Generated paper (GVP / R23 pattern):
+
+<img src="screenshots/paper-output.png" width="420">
+
 ## Download
 
 **[⬇ Download FormulaSnap (Windows, 60 MB)](https://github.com/dhanush383/FormulaSnap-download/releases/latest/download/FormulaSnap.zip)**
