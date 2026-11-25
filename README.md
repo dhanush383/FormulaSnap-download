@@ -6,6 +6,7 @@ Turn handwritten notes, formulas, circuit diagrams and whole PDFs into **editabl
 - Circuits redrawn with exact textbook symbols (resistors, capacitors, diodes, BJTs, MOSFETs, op-amps, logic gates, transformers, ICs). Every part can be moved, copied and edited in Word
 - Diagrams, tables, headings, bold/centred text and two-column layouts kept
 - Whole PDFs or phone photos converted page by page, word for word
+- **Exam paper mode:** ANITS (unit-wise with OR) and GVP / AP autonomous R23 (Part A + units, CO & BL) patterns. Type, snip or import old papers; **Check my paper** verifies marks totals, OR choices, numbering, CO/BL and repeated questions; one click makes the formatted Word paper + PDF
 
 ## Download
 

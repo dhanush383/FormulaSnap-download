@@ -84,6 +84,36 @@ Convert a whole file (PDF or photos of pages)
    Time: about 15-60 seconds per page. Press "Stop" to cancel.
    A page that can't be read is added as a picture, so nothing is lost.
 
+Question paper (Exam paper button)
+----------------------------------
+1. Press "Exam paper" at the top of the window.
+2. Choose the pattern:
+     ANITS - one question per unit, with OR   (marks as 4M, no table lines)
+     GVP / AP autonomous R23 - Part A + units, CO & BL columns (table)
+   Fill in college, examination, regulation, subject, branch, code, time, marks.
+3. Type the questions, one line each, like:
+     UNIT-I
+     1. a) Explain the working of a bridge rectifier. [6M] [CO1] [L2]
+        b) Find the ripple factor $\gamma = \frac{1}{4\sqrt{3} f C R_L}$  [6M] [CO1] [L3]
+     OR
+     2. Derive the diode current equation. [12M] [CO1] [L3]
+   (maths between $...$; CO and level are optional for ANITS)
+   Or press "Snip questions" (select questions/circuits on screen) or
+   "Import old paper / photo" - Claude types them in this format for you,
+   circuits included. Always compare with the original afterwards.
+4. Press "Check my paper". It checks, without AI:
+     - marks add up to Max. Marks
+     - OR choices carry equal marks, every unit has two choices
+     - question numbers have no gaps or repeats, parts are a, b, c...
+     - every part has marks (and CO + level for the R23 pattern)
+     - repeated / near-identical questions
+     - CO and Bloom-level summary
+5. Press "Make Word paper". The paper (header, units, OR, marks column,
+   real equations, editable circuits) opens in Word and is saved in
+   Documents\FormulaSnap papers, with a PDF copy to check before printing.
+Your draft is kept automatically. Nothing is sent to the internet unless you
+use Snip or Import (unpublished questions you type stay on this PC).
+
 Chat (tell it what to change)
 -----------------------------
 The chat window shows, step by step, what FormulaSnap is doing. After the file
