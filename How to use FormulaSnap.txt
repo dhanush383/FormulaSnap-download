@@ -100,7 +100,15 @@ Question paper (Exam paper button)
    (maths between $...$; CO and level are optional for ANITS)
    Or press "Snip questions" (select questions/circuits on screen) or
    "Import old paper / photo" - Claude types them in this format for you,
-   circuits included. Always compare with the original afterwards.
+   circuits included. Before anything is sent, FormulaSnap reminds you that
+   the picture goes to the Claude AI (check your college allows it for
+   unpublished papers; old/released papers are fine).
+   A REVIEW window then shows the original on the left and what was read on
+   the right. Anything the AI was not sure about is marked [?] in yellow.
+   Fix it, then press "Approve - add to my paper" (nothing is added before).
+   Tick "This is an old paper" to keep its questions in your PAST-PAPERS
+   LIBRARY: "Past papers" searches them (and adds one to your paper, circuit
+   included), and "Check my paper" warns when a question was asked before.
 4. Press "Check my paper". It checks, without AI:
      - marks add up to Max. Marks
      - OR choices carry equal marks, every unit has two choices

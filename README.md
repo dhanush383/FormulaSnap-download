@@ -7,6 +7,8 @@ Turn handwritten notes, formulas, circuit diagrams and whole PDFs into **editabl
 - Diagrams, tables, headings, bold/centred text and two-column layouts kept
 - Whole PDFs or phone photos converted page by page, word for word
 - **Exam paper mode:** ANITS (unit-wise with OR) and GVP / AP autonomous R23 (Part A + units, CO & BL) patterns. Type, snip or import old papers; **Check my paper** verifies marks totals, OR choices, numbering, CO/BL and repeated questions; one click makes the formatted Word paper + PDF
+- **Review before it goes in:** original beside what was read, unsure readings highlighted, nothing added until you approve
+- **Past-papers library:** search old questions, reuse them (circuits included), and get warned when a question was asked before
 
 ## Download
 
